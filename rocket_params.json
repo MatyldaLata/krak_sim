@@ -1,0 +1,527 @@
+{
+  "rocket": {
+    "name": "KRAK",
+    "total_length_m": 4.238,
+    "diameter_m": 0.16,
+    "radius_m": 0.08,
+    "ld_ratio_given": 26.49,
+    "ld_ratio_computed": 26.49,
+    "dry_mass_kg": 32.9,
+    "wet_mass_kg": 49.3,
+    "propellant_mass_kg": 16.4,
+    "mass_without_motor_kg": 16.7,
+    "center_of_mass_without_motor_m": 2.188,
+    "inertia_without_motor_kg_m2": [
+      26.365,
+      26.365,
+      0.0648
+    ],
+    "nose": {
+      "length_m": 0.7,
+      "kind": "vonKarman"
+    },
+    "fins": {
+      "n": 4,
+      "root_chord_m": 0.27,
+      "tip_chord_m": 0.09,
+      "span_m": 0.12,
+      "sweep_length_m": 0.17,
+      "top_of_root_from_tail_m": 0.29,
+      "thickness_m": 0.006,
+      "shear_modulus_pa": 5000000000.0,
+      "material": "CFRP tkanina 0/90"
+    },
+    "drag": {
+      "mach": [
+        0.0,
+        0.3,
+        0.6,
+        0.8,
+        0.9,
+        0.95,
+        1.0,
+        1.05,
+        1.1,
+        1.2,
+        1.4,
+        1.6,
+        2.0
+      ],
+      "cd_power_off": [
+        0.46,
+        0.44,
+        0.43,
+        0.45,
+        0.49,
+        0.55,
+        0.62,
+        0.66,
+        0.67,
+        0.65,
+        0.6,
+        0.56,
+        0.5
+      ],
+      "cd_power_on": [
+        0.37,
+        0.35,
+        0.34,
+        0.36,
+        0.4,
+        0.46,
+        0.53,
+        0.597,
+        0.607,
+        0.587,
+        0.537,
+        0.497,
+        0.437
+      ],
+      "cd_equivalent_constant": {
+        "power_off": 0.57,
+        "power_on": 0.5
+      }
+    },
+    "rail_buttons": {
+      "upper_from_tail_m": 2.153,
+      "lower_from_tail_m": 0.1
+    },
+    "payload_mass_kg": 1.1
+  },
+  "mission": {
+    "category": "L9",
+    "target_apogee_agl_m": 9000
+  },
+  "reference": {
+    "max_velocity_m_s": 548.1,
+    "max_mach": 1.644,
+    "rail_exit_velocity_m_s": 34.73
+  },
+  "motor": {
+    "name": "KRAK-E3.5",
+    "thrust_nominal_n": 3500.0,
+    "propellants": "N2O (utleniacz) & etanol (paliwo), układ ciśnieniowy z dociskiem N2",
+    "isp_s": 205.0,
+    "propellant_loaded_fraction": 1.0,
+    "total_impulse_ns": 31981.0,
+    "thrust_curve": {
+      "ramp_up_s": 0.3,
+      "ramp_down_s": 0.3,
+      "thrust_end_ratio": 1.0
+    },
+    "burn_time_s": 9.437,
+    "of_ratio": 4.0,
+    "oxidizer": {
+      "liquid_density_kg_m3": 800.0,
+      "gas_density_kg_m3": 60.0,
+      "name": "N2O",
+      "gas_name": "N2"
+    },
+    "fuel": {
+      "liquid_density_kg_m3": 789.0,
+      "gas_density_kg_m3": 60.0,
+      "name": "etanol",
+      "gas_name": "N2"
+    },
+    "ullage_fraction": 0.1,
+    "residual_fraction": 0.03,
+    "tank_radius_m": 0.07,
+    "fuel_tank_center_from_nozzle_m": 0.719,
+    "oxidizer_tank_center_from_nozzle_m": 1.528,
+    "nozzle_radius_m": 0.036,
+    "dry_mass_kg": 16.2,
+    "center_of_dry_mass_from_nozzle_m": 1.127,
+    "dry_inertia_kg_m2": [
+      9.865,
+      9.865,
+      0.0554
+    ]
+  },
+  "recovery": {
+    "drogue": {
+      "deploy": "apogee",
+      "cd_s_m2": 0.85,
+      "lag_s": 1.0
+    },
+    "main": {
+      "deploy_altitude_agl_m": 400,
+      "type": "spadochron toroidalny Ø ~2,8 m (Cd ~2,0)",
+      "cd_s_m2": 12.0,
+      "lag_s": 1.5
+    },
+    "sampling_rate_hz": 100
+  },
+  "avionics": {
+    "flight_computer": "Raspberry Pi 4 Compute Module",
+    "telemetry": "MAVLink 2.4 GHz, zasięg 10–37 km"
+  },
+  "euroc": {
+    "2025": {
+      "edition": "6. edycja",
+      "dates": "9–15 października 2025",
+      "location": "Constância & Santa Margarida, Portugalia",
+      "participants": "28 zespołów, ~700 studentów"
+    },
+    "2026": {
+      "edition": "7. edycja",
+      "dates": "15–21 października 2026",
+      "location": "Constância & Santa Margarida, Portugalia",
+      "participants": "brak danych"
+    }
+  },
+  "site": {
+    "latitude": 39.3897,
+    "longitude": -8.288964,
+    "zeszyt_latitude": 39.2409,
+    "zeszyt_longitude": -8.1721,
+    "elevation_m": 158,
+    "gravity_m_s2": 9.81,
+    "earth_radius_m": 6369568.0,
+    "flattening": 0.0033528106647474805,
+    "semi_major_axis_m": 6378137.0,
+    "semi_minor_axis_m": 6356752.314
+  },
+  "environment": {
+    "date": [
+      2026,
+      10,
+      15,
+      12
+    ],
+    "atmospheric_model": "custom_atmosphere",
+    "temperature_k": 293.15,
+    "pressure_ground_pa": 99441,
+    "air_density_kg_m3": 1.1817,
+    "speed_of_sound_m_s": 343.2,
+    "wind": {
+      "ground_speed_min_m_s": 0.0,
+      "ground_speed_max_m_s": 8.7,
+      "ground_speed_mean_m_s": 4.0,
+      "nominal_direction_deg_toward": 135,
+      "profile_heights_m": [
+        168,
+        658,
+        1158,
+        2158,
+        10000
+      ],
+      "profile_multipliers": [
+        1.0,
+        1.749,
+        1.931,
+        2.132,
+        2.132
+      ],
+      "profile_note": "prawo potęgowe 1/7 od 10 m AGL, stałe powyżej 2000 m AGL"
+    },
+    "lapse_rate_k_per_m": 0.0065
+  },
+  "launch": {
+    "rail_length_m": 12.0,
+    "inclination_deg": 84.0,
+    "inclination_tolerance_deg": 1.0,
+    "inclination_min_possible_deg": 70.0,
+    "heading_deg": 133.0
+  },
+  "simulation_outputs": {
+    "apogee_time_s": 41.99,
+    "apogee_altitude_m": 9158.0,
+    "apogee_altitude_agl_m": 9000.0,
+    "x_position_m": 625.2,
+    "y_position_m": -553.2,
+    "stability_margin_rail_cal": 2.42,
+    "stability_margin_min_cal": 2.42,
+    "stability_margin_max_cal": 3.51,
+    "max_acceleration_m_s2": 66.5,
+    "drogue_descent_speed_high_m_s": 39.8,
+    "drogue_descent_speed_low_m_s": 25.9,
+    "main_descent_speed_m_s": 6.81,
+    "impact_velocity_m_s": 6.75,
+    "landing_distance_m": 3451.0,
+    "rail_exit_velocity_m_s": 34.7
+  },
+  "profiles": {
+    "L9": {
+      "propellant_loaded_fraction": 1.0,
+      "target_apogee_agl_m": 9000
+    },
+    "L3": {
+      "propellant_loaded_fraction": 0.359,
+      "target_apogee_agl_m": 3000
+    }
+  },
+  "requirements": {
+    "total_impulse_max_ns": 40960,
+    "payload_min_kg": 1.0,
+    "rail_exit_min_m_s": 30.0,
+    "stability_min_cal": 1.5,
+    "stability_max_cal": 4.0,
+    "drogue_speed_range_m_s": [
+      23.0,
+      46.0
+    ],
+    "main_deploy_max_agl_m": 450.0,
+    "main_speed_max_m_s": 9.0,
+    "landing_radius_max_m": 2500.0,
+    "ground_wind_max_m_s": 8.7
+  },
+  "monte_carlo": {
+    "n_runs": 200,
+    "seed": 42,
+    "distributions": {
+      "ground_wind_speed_m_s": {
+        "dist": "truncnorm",
+        "mean": 4.0,
+        "std": 2.5,
+        "min": 0.0,
+        "max": 8.7
+      },
+      "wind_direction_deg_toward": {
+        "dist": "uniform",
+        "min": 0.0,
+        "max": 360.0
+      },
+      "upper_wind_factor": {
+        "dist": "truncnorm",
+        "mean": 1.0,
+        "std": 0.25,
+        "min": 0.3,
+        "max": 2.0
+      },
+      "temperature_k": {
+        "dist": "truncnorm",
+        "mean": 293.15,
+        "std": 3.0,
+        "min": 283.0,
+        "max": 303.0
+      },
+      "inclination_deg": {
+        "dist": "uniform",
+        "min": 83.0,
+        "max": 85.0
+      },
+      "heading_deg": {
+        "dist": "normal",
+        "mean": 133.0,
+        "std": 1.5
+      },
+      "thrust_scale": {
+        "dist": "normal",
+        "mean": 1.0,
+        "std": 0.03
+      },
+      "propellant_scale": {
+        "dist": "normal",
+        "mean": 1.0,
+        "std": 0.01
+      },
+      "mass_offset_kg": {
+        "dist": "normal",
+        "mean": 0.0,
+        "std": 0.5
+      },
+      "com_offset_m": {
+        "dist": "normal",
+        "mean": 0.0,
+        "std": 0.01
+      },
+      "cd_scale": {
+        "dist": "normal",
+        "mean": 1.0,
+        "std": 0.05
+      },
+      "drogue_cds_scale": {
+        "dist": "normal",
+        "mean": 1.0,
+        "std": 0.08
+      },
+      "main_cds_scale": {
+        "dist": "normal",
+        "mean": 1.0,
+        "std": 0.1
+      }
+    }
+  },
+  "_provenance": {
+    "rocket.name": "projekt KRAK-9",
+    "rocket.total_length_m": "projekt KRAK-9",
+    "rocket.diameter_m": "projekt KRAK-9",
+    "rocket.radius_m": "obliczone",
+    "rocket.ld_ratio_given": "obliczone",
+    "rocket.ld_ratio_computed": "obliczone",
+    "rocket.dry_mass_kg": "projekt KRAK-9",
+    "rocket.wet_mass_kg": "projekt KRAK-9",
+    "rocket.propellant_mass_kg": "obliczone",
+    "mission.category": "dokument",
+    "mission.target_apogee_agl_m": "dokument",
+    "reference.max_velocity_m_s": "wynik symulacji",
+    "reference.max_mach": "wynik symulacji",
+    "reference.rail_exit_velocity_m_s": "wynik symulacji",
+    "motor.name": "projekt KRAK-9",
+    "motor.thrust_nominal_n": "projekt KRAK-9",
+    "motor.propellants": "projekt KRAK-9",
+    "motor.isp_s": "projekt KRAK-9",
+    "recovery.drogue.deploy": "dokument",
+    "recovery.main.deploy_altitude_agl_m": "projekt KRAK-9",
+    "recovery.main.type": "projekt KRAK-9",
+    "avionics.flight_computer": "dane ASTERIA",
+    "avionics.telemetry": "dane ASTERIA",
+    "euroc.2025.edition": "dane ASTERIA",
+    "euroc.2025.dates": "dane ASTERIA",
+    "euroc.2025.location": "dane ASTERIA",
+    "euroc.2025.participants": "dane ASTERIA",
+    "euroc.2026.edition": "dane ASTERIA",
+    "euroc.2026.dates": "dane ASTERIA",
+    "euroc.2026.location": "dane ASTERIA",
+    "euroc.2026.participants": "dane ASTERIA",
+    "site.latitude": "dokument",
+    "site.longitude": "dokument",
+    "site.zeszyt_latitude": "Zeszyt (Twoje dane)",
+    "site.zeszyt_longitude": "Zeszyt (Twoje dane)",
+    "site.elevation_m": "projekt KRAK-9",
+    "site.gravity_m_s2": "Zeszyt (Twoje dane)",
+    "site.earth_radius_m": "obliczone",
+    "site.flattening": "stała",
+    "site.semi_major_axis_m": "stała",
+    "site.semi_minor_axis_m": "stała",
+    "environment.date": "Zeszyt (Twoje dane)",
+    "environment.atmospheric_model": "Zeszyt (Twoje dane)",
+    "environment.temperature_k": "projekt KRAK-9",
+    "environment.pressure_ground_pa": "obliczone",
+    "environment.air_density_kg_m3": "obliczone",
+    "environment.speed_of_sound_m_s": "obliczone",
+    "environment.wind.ground_speed_min_m_s": "Zeszyt (Twoje dane)",
+    "environment.wind.ground_speed_max_m_s": "Zeszyt (Twoje dane)",
+    "environment.wind.ground_speed_mean_m_s": "projekt KRAK-9",
+    "environment.wind.nominal_direction_deg_toward": "projekt KRAK-9",
+    "environment.wind.profile_heights_m": "projekt KRAK-9",
+    "environment.wind.profile_multipliers": "projekt KRAK-9",
+    "launch.rail_length_m": "dokument",
+    "launch.inclination_deg": "Zeszyt (Twoje dane)",
+    "launch.inclination_tolerance_deg": "Zeszyt (Twoje dane)",
+    "launch.inclination_min_possible_deg": "Zeszyt (Twoje dane)",
+    "launch.heading_deg": "dokument",
+    "simulation_outputs.apogee_time_s": "wynik symulacji",
+    "simulation_outputs.apogee_altitude_m": "wynik symulacji (apogeum ASL)",
+    "simulation_outputs.x_position_m": "wynik symulacji",
+    "simulation_outputs.y_position_m": "wynik symulacji",
+    "motor.propellant_loaded_fraction": "projekt KRAK-9",
+    "profiles.L9.propellant_loaded_fraction": "projekt KRAK-9",
+    "profiles.L9.target_apogee_agl_m": "Zeszyt (Twoje dane)",
+    "motor.total_impulse_ns": "obliczone",
+    "motor.thrust_curve.ramp_up_s": "projekt KRAK-9",
+    "motor.thrust_curve.ramp_down_s": "projekt KRAK-9",
+    "motor.burn_time_s": "obliczone",
+    "motor.of_ratio": "projekt KRAK-9",
+    "motor.oxidizer.liquid_density_kg_m3": "stała (N2O nasycony ~18 °C)",
+    "motor.fuel.liquid_density_kg_m3": "stała",
+    "motor.oxidizer.gas_density_kg_m3": "projekt KRAK-9",
+    "motor.fuel.gas_density_kg_m3": "projekt KRAK-9",
+    "motor.ullage_fraction": "projekt KRAK-9",
+    "motor.residual_fraction": "projekt KRAK-9",
+    "motor.tank_radius_m": "projekt KRAK-9",
+    "motor.fuel_tank_center_from_nozzle_m": "projekt KRAK-9",
+    "motor.oxidizer_tank_center_from_nozzle_m": "projekt KRAK-9",
+    "motor.nozzle_radius_m": "projekt KRAK-9",
+    "motor.dry_mass_kg": "projekt KRAK-9",
+    "motor.center_of_dry_mass_from_nozzle_m": "projekt KRAK-9",
+    "motor.dry_inertia_kg_m2": "projekt KRAK-9",
+    "rocket.mass_without_motor_kg": "projekt KRAK-9 (+0,3 kg grubsze lotki)",
+    "rocket.center_of_mass_without_motor_m": "projekt KRAK-9",
+    "rocket.inertia_without_motor_kg_m2": "projekt KRAK-9",
+    "rocket.nose.length_m": "projekt KRAK-9",
+    "rocket.nose.kind": "projekt KRAK-9",
+    "rocket.fins.n": "projekt KRAK-9",
+    "rocket.fins.root_chord_m": "projekt KRAK-9",
+    "rocket.fins.tip_chord_m": "projekt KRAK-9",
+    "rocket.fins.span_m": "projekt KRAK-9",
+    "rocket.fins.sweep_length_m": "projekt KRAK-9",
+    "rocket.fins.top_of_root_from_tail_m": "projekt KRAK-9",
+    "rocket.drag.mach": "projekt KRAK-9",
+    "rocket.drag.cd_power_off": "projekt KRAK-9",
+    "rocket.drag.cd_power_on": "projekt KRAK-9",
+    "rocket.rail_buttons.upper_from_tail_m": "projekt KRAK-9",
+    "rocket.rail_buttons.lower_from_tail_m": "projekt KRAK-9",
+    "rocket.payload_mass_kg": "projekt KRAK-9",
+    "recovery.drogue.cd_s_m2": "projekt KRAK-9 (środek okna 0,68–1,09 m² z analizy; 0,75 dawało 2% lotów MC > 46 m/s)",
+    "recovery.drogue.lag_s": "projekt KRAK-9",
+    "recovery.main.cd_s_m2": "projekt KRAK-9",
+    "recovery.main.lag_s": "projekt KRAK-9",
+    "recovery.sampling_rate_hz": "projekt KRAK-9",
+    "requirements.total_impulse_max_ns": "dokument",
+    "requirements.payload_min_kg": "dokument (RQT-0860)",
+    "requirements.rail_exit_min_m_s": "dokument",
+    "requirements.stability_min_cal": "dokument",
+    "requirements.stability_max_cal": "kryterium projektowe (SRD RQT-1030: unikać nadstateczności, przykład >6)",
+    "requirements.drogue_speed_range_m_s": "dokument",
+    "requirements.main_deploy_max_agl_m": "dokument",
+    "requirements.main_speed_max_m_s": "dokument",
+    "requirements.landing_radius_max_m": "dokument",
+    "requirements.ground_wind_max_m_s": "dokument",
+    "monte_carlo.n_runs": "PRZYKŁADOWE",
+    "monte_carlo.seed": "PRZYKŁADOWE",
+    "monte_carlo.distributions.ground_wind_speed_m_s": "PRZYKŁADOWE",
+    "monte_carlo.distributions.wind_direction_deg_toward": "PRZYKŁADOWE",
+    "monte_carlo.distributions.upper_wind_factor": "PRZYKŁADOWE",
+    "monte_carlo.distributions.temperature_k": "PRZYKŁADOWE",
+    "monte_carlo.distributions.inclination_deg": "PRZYKŁADOWE",
+    "monte_carlo.distributions.heading_deg": "PRZYKŁADOWE",
+    "monte_carlo.distributions.thrust_scale": "PRZYKŁADOWE",
+    "monte_carlo.distributions.propellant_scale": "PRZYKŁADOWE",
+    "monte_carlo.distributions.mass_offset_kg": "PRZYKŁADOWE",
+    "monte_carlo.distributions.com_offset_m": "PRZYKŁADOWE",
+    "monte_carlo.distributions.cd_scale": "PRZYKŁADOWE",
+    "monte_carlo.distributions.drogue_cds_scale": "PRZYKŁADOWE",
+    "monte_carlo.distributions.main_cds_scale": "PRZYKŁADOWE",
+    "rocket.drag.cd_equivalent_constant": "obliczone (to samo apogeum co krzywa)",
+    "simulation_outputs.apogee_altitude_agl_m": "wynik symulacji",
+    "simulation_outputs.stability_margin_rail_cal": "wynik symulacji",
+    "simulation_outputs.stability_margin_min_cal": "wynik symulacji",
+    "simulation_outputs.stability_margin_max_cal": "wynik symulacji",
+    "simulation_outputs.max_acceleration_m_s2": "wynik symulacji (wznoszenie; przy otwarciu maina 96 m/s²)",
+    "simulation_outputs.drogue_descent_speed_high_m_s": "wynik symulacji",
+    "simulation_outputs.drogue_descent_speed_low_m_s": "wynik symulacji",
+    "simulation_outputs.main_descent_speed_m_s": "wynik symulacji",
+    "simulation_outputs.impact_velocity_m_s": "wynik symulacji",
+    "simulation_outputs.landing_distance_m": "wynik symulacji",
+    "environment.lapse_rate_k_per_m": "stała (ISA)",
+    "motor.thrust_curve.thrust_end_ratio": "projekt KRAK-9 (1.0 = ciąg stały, ciśnienie regulowane)",
+    "rocket.fins.thickness_m": "projekt KRAK-9 (dobrane z analizy flatteru: zapas ≥1,5)",
+    "rocket.fins.shear_modulus_pa": "dane materiałowe (CFRP 0/90, konserwatywnie)",
+    "rocket.fins.material": "projekt KRAK-9",
+    "profiles.L3.propellant_loaded_fraction": "obliczone (bisekcja w RocketPy, KRAK-9)",
+    "profiles.L3.target_apogee_agl_m": "dokument",
+    "simulation_outputs.rail_exit_velocity_m_s": "wynik symulacji"
+  },
+  "_example_fields": [
+    "monte_carlo.distributions.cd_scale",
+    "monte_carlo.distributions.com_offset_m",
+    "monte_carlo.distributions.drogue_cds_scale",
+    "monte_carlo.distributions.ground_wind_speed_m_s",
+    "monte_carlo.distributions.heading_deg",
+    "monte_carlo.distributions.inclination_deg",
+    "monte_carlo.distributions.main_cds_scale",
+    "monte_carlo.distributions.mass_offset_kg",
+    "monte_carlo.distributions.propellant_scale",
+    "monte_carlo.distributions.temperature_k",
+    "monte_carlo.distributions.thrust_scale",
+    "monte_carlo.distributions.upper_wind_factor",
+    "monte_carlo.distributions.wind_direction_deg_toward",
+    "monte_carlo.n_runs",
+    "monte_carlo.seed"
+  ],
+  "_notes": {
+    "units": "wszystkie wartości w SI (m, kg, s, N, K, Pa); kąty w stopniach",
+    "coordinate_system": "rakieta: tail_to_nose, początek na płaszczyźnie wylotu dyszy; silnik: nozzle_to_combustion_chamber",
+    "status_legend": {
+      "dane ASTERIA": "z pliku Podsumowanie_ASTERIA_EuRoC.xlsx",
+      "Zeszyt (Twoje dane)": "z pliku Zeszyt.xlsx",
+      "dokument": "z regulaminu / SRD / przewodnika EuRoC",
+      "obliczone": "policzone z innych pól",
+      "stała": "stała fizyczna",
+      "PRZYKŁADOWE": "przykładowe, do podmiany",
+      "projekt KRAK-9": "parametr zaprojektowany dla KRAK-9 (uzasadnienie w rozmowie / sim.py)",
+      "wynik symulacji": "python -m krak_sim --mode nominal (RocketPy 1.13, wiatr 4 m/s → 135°)"
+    }
+  }
+}

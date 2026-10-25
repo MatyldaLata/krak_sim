@@ -1,0 +1,5 @@
+rocketpy==1.13.0
+numpy
+scipy
+pandas
+matplotlib
